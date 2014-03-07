@@ -133,5 +133,6 @@ if ! vm_exists "$vmname"; then
 fi
 
 
+VBoxManage snapshot "$vmname" take 'Snapshot 1'
 VBoxManage startvm "$vmname" --type gui
 VBoxManage controlvm "$vmname" clipboard bidirectional

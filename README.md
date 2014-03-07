@@ -31,5 +31,6 @@ This script does the following things:
         * This script skips files which already exists. If you have imcomplete files, remove them and rerun this script.
     * Import *.ova file and create a vm.
     * Attach a dvd storage for VirtualBox GuestAdditions.
+* Take a snapshot of the vm.
 * Start the vm.
 * Set the shared clipboard config to bidirectional.
