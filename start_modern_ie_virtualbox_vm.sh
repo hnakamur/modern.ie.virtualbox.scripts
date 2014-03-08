@@ -130,6 +130,7 @@ if ! vm_exists "$vmname"; then
 
   VBoxManage import "$ova"
   VBoxManage storageattach "$vmname" --storagectl IDE --port 1 --device 0 --type dvddrive --medium additions
+  VBoxManage snapshot "$vmname" take 'Snapshot 1'
 fi
 
 
