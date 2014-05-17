@@ -1,0 +1,28 @@
+{
+  "name": "modern.ie.virtualbox.scripts",
+  "version": "0.1.0",
+  "description": "Automate downloading and starting modern.IE VirtualBox VMs on OSX",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/hnakamur/modern.ie.virtualbox.scripts"
+  },
+  "keywords": [
+    "modern.IE"
+  ],
+  "author": "Hiroaki Nakamura <hnakamur@gmail.com>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/hnakamur/modern.ie.virtualbox.scripts/issues"
+  },
+  "homepage": "https://github.com/hnakamur/modern.ie.virtualbox.scripts",
+  "dependencies": {
+    "JSONStream": "^0.8.2",
+    "promise": "^5.0.0",
+    "underscore": "^1.6.0",
+    "phantomjs": "^1.9.7-5"
+  }
+}

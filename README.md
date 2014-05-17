@@ -7,8 +7,23 @@ setup and start modern.ie virtual machines
 We abbreviate virtual machine to vm hereafter.
 For example, if you want to start a "IE9 - Win7" vm, run the following command in the terminal app.
 
+The old version of this script which was written in bash script was deprecated.
+The latest version of this script is written in [node.js](http://nodejs.org/) and [PhantomJS | PhantomJS](http://phantomjs.org/)
+
+## Setup
+
+- Install node.js.
+- Install phantom.js
+
 ```
-$ ./start_modern_ie_virtualbox_vm.sh "IE9 - Win7"
+$ npm install -g phantomjs
+```
+
+
+## Usage
+
+```
+$ node index.js "IE9 - Win7"
 ```
 
 Supported vm types:
