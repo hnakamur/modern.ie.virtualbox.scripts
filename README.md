@@ -49,3 +49,10 @@ This script does the following things:
     * Take a snapshot of the vm so that you can reset quickly after the OS trial expires.
 * Start the vm.
 * Set the shared clipboard config to bidirectional.
+
+## こちらも参考になるかも
+
+* [modern.IEのOSX上のVirtualBox VMのダウンロードから起動までを自動化するスクリプト - Qiita](http://qiita.com/hnakamur/items/7b2c153c60ee1a637ff2)
+* [Windows8.xのmodern.IEで日本語を入力、表示できるようにする。 - Qiita](http://qiita.com/hnakamur/items/cd37c9c8826afe4b4dda)
+* [VirtualBox - modern.IEのWindows 7で日本語の表示と入力をできるようにする - Qiita](http://qiita.com/hnakamur/items/5f2f9e817dd0de60abb2)
+
