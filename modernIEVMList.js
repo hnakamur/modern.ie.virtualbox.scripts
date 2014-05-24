@@ -7,7 +7,7 @@ var _ = require('underscore');
 var Promise = require('promise');
 var JSONStream = require('JSONStream');
 
-var myUtil = require('myUtil');
+var myUtil = require('./myUtil');
 
 var osVersionMappingFromVMNameToVMList = {
   'WinXP' : 'XP',

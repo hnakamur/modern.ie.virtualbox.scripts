@@ -4,9 +4,9 @@ var stream = require('stream');
 
 var Promise = require('promise');
 
-var downloader = require('modernIEDownloader');
-var myUtil = require('myUtil');
-var vmList = require('modernIEVMList');
+var downloader = require('./modernIEDownloader');
+var myUtil = require('./myUtil');
+var vmList = require('./modernIEVMList');
 
 
 var snapshotName = 'Snapshot 1';
