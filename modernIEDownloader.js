@@ -4,8 +4,8 @@ var fs = require('fs');
 
 var Promise = require('promise');
 
-var digest = require('streamMessageDigest');
-var httpStream = require('httpStream');
+var digest = require('./streamMessageDigest');
+var httpStream = require('./httpStream');
 
 function downloadFileIfNeeded(fileInfo) {
   if (fileInfo.md5.length > 0) {

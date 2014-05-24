@@ -5,9 +5,9 @@ var stream = require('stream');
 
 var Promise = require('promise');
 
-var myUtil = require('myUtil');
-var vmList = require('modernIEVMList');
-var vb = require('modernIEVirtualBox');
+var myUtil = require('./myUtil');
+var vmList = require('./modernIEVMList');
+var vb = require('./modernIEVirtualBox');
 
 var vmListJsonFilePath = 'vmList.json';
 
