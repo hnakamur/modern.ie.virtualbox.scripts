@@ -8,17 +8,18 @@ We abbreviate virtual machine to vm hereafter.
 For example, if you want to start a "IE9 - Win7" vm, run the following command in the terminal app.
 
 The old version of this script which was written in bash script was deprecated.
-The latest version of this script is written in [node.js](http://nodejs.org/) and [PhantomJS | PhantomJS](http://phantomjs.org/)
+The latest version of this script is written in [node.js](http://nodejs.org/)
 
 ## Setup
 
 - Install node.js.
-- Install phantom.js
+- Clone this repository and install local node modules.
 
 ```
-$ npm install -g phantomjs
+$ git clone https://github.com/hnakamur/modern.ie.virtualbox.scripts
+$ cd modern.ie.virtualbox.scripts
+$ npm install
 ```
-
 
 ## Usage
 

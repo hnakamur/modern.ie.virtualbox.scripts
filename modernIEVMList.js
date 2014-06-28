@@ -7,6 +7,7 @@ var _ = require('underscore');
 var Promise = require('promise');
 var JSONStream = require('JSONStream');
 
+var downloadVMList = require('./downloadVMList');
 var myUtil = require('./myUtil');
 
 var osVersionMappingFromVMNameToVMList = {
@@ -21,17 +22,16 @@ function downloadVMListIfNeeded(vmListJsonFilePath) {
   return myUtil.fileExists(vmListJsonFilePath)
   .then(function (exists) {
     if (!exists) {
-      return downloadVMList(vmListJsonFilePath);
+      return downloadAndSaveVMList(vmListJsonFilePath);
     } else {
       return [];
     }
   });
 }
 
-function downloadVMList(vmListJsonFilePath) {
+function downloadAndSaveVMList(vmListJsonFilePath) {
   console.log('downloading ' + vmListJsonFilePath + '...');
-  var command = 'phantomjs downloadVMList.js > "' + vmListJsonFilePath + '"';
-  return myUtil.shellExec(command)
+  return downloadVMList.downloadVMList(vmListJsonFilePath)
   .then(function () {
     console.log('downloaded ' + vmListJsonFilePath + '.');
   });
@@ -68,7 +68,7 @@ function listVM(vmListJsonFilePath, osName, virtualizationSoftwareName) {
     });
 
     fs.createReadStream(vmListJsonFilePath).on('error', reject)
-      .pipe(JSONStream.parse("osList.*").on('error', reject))
+      .pipe(JSONStream.parse("*").on('error', reject))
       .pipe(namesPicker);
   });
 }
@@ -105,7 +105,7 @@ function getFileListForVM(jsonFilePath, osName, virtualizationSoftwareName, brow
     });
 
     fs.createReadStream(jsonFilePath).on('error', reject)
-      .pipe(JSONStream.parse("osList.*").on('error', reject))
+      .pipe(JSONStream.parse("*").on('error', reject))
       .pipe(filesPicker);
   });
 }

@@ -1,6 +1,6 @@
 {
   "name": "modern.ie.virtualbox.scripts",
-  "version": "0.1.0",
+  "version": "0.2.0",
   "description": "Automate downloading and starting modern.IE VirtualBox VMs on OSX",
   "main": "index.js",
   "scripts": {
@@ -21,8 +21,9 @@
   "homepage": "https://github.com/hnakamur/modern.ie.virtualbox.scripts",
   "dependencies": {
     "JSONStream": "^0.8.2",
+    "cheerio": "^0.17.0",
     "promise": "^5.0.0",
-    "underscore": "^1.6.0",
-    "phantomjs": "^1.9.7-5"
+    "request": "^2.36.0",
+    "underscore": "^1.6.0"
   }
 }
